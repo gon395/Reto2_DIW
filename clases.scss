@@ -1,0 +1,118 @@
+@import 'variables';
+
+// Contenedor principal
+.container {
+  width: 90%;
+  margin: $margen-container;
+  max-width: $ancho-maximo;
+}
+
+// Titulares y texto
+h1, h2 {
+  font-family: $fuente-principal;
+  color: $color-primario;
+  text-align: center;
+  text-shadow: 2px 4px 8px $color-sombra;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+p {
+  font-family: $fuente-secundaria;
+  font-size: 1.2rem;
+  color: $color-texto;
+}
+
+// Botones
+.boton {
+  background-color: $color-primario;
+  color: $color-blanco;
+  padding: 10px 20px;
+  border: none;
+  border-radius: $radio-borde;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $color-hover;
+  }
+}
+
+// Tablas
+.tabla {
+  margin: 0 auto;
+  width: $ancho-tabla;
+  border-collapse: collapse;
+  text-align: center;
+
+  td {
+    padding: 20px;
+    vertical-align: top;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 210px;
+      height: 150px;
+      border-radius: $radio-borde;
+      box-shadow: $sombra;
+    }
+  }
+}
+
+// Estilos del encabezado
+header {
+  background-color: $color-primario;
+  color: $color-blanco;
+  padding: $padding-seccion 0;
+
+  h1 {
+    margin: 0;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      position: relative;
+
+      a {
+        color: $color-blanco;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+
+        &:hover {
+          background-color: $color-hover;
+        }
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: $color-secundario;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px $sombra;
+
+        li {
+          padding: 10px 15px;
+
+          &:hover {
+            background-color: $color-hover;
+          }
+        }
+      }
+
+      &:hover .dropdown-content {
+        display: block;
+      }
+    }
+  }
+}

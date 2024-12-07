@@ -1,0 +1,25 @@
+// Colores
+$color-primario: #5a3e36;
+$color-secundario: #593c3c;
+$color-texto: #353434;
+$color-fondo: #b0b0b0;
+$color-hover: #7c4646;
+$color-blanco: #fff;
+$color-sombra: rgba(0, 0, 0, 0.4);
+
+// Tipografías
+$fuente-principal: 'Raleway', sans-serif;
+$fuente-secundaria: 'Roboto', sans-serif;
+$fuente-monospacio: monospace;
+
+// Tamaños y espaciados
+$padding-seccion: 20px;
+$margen-container: 20px auto;
+$ancho-maximo: 1200px;
+$ancho-tabla: 90%;
+$radio-borde: 8px;
+$sombra: 0 8px 10px rgba(0, 0, 0, 0.25);
+
+// Media queries
+$tamano-tablet: 768px;
+$tamano-desktop: 1200px;
